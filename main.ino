@@ -64,7 +64,7 @@ while(1){
                 //heat mode
                 CLR_BIT(PORTB,PB1);
             }
-            if (PIND & (1<<PD1)){
+            else if (PIND & (1<<PD1)){
                 //economy mode
                 SET_BIT(PORTB,PB2);
             }
@@ -72,7 +72,7 @@ while(1){
                 //heat mode
                 CLR_BIT(PORTB,PB2);
             }
-            if(PINB & (1<<PB0)){
+            else if(PINB & (1<<PB0)){
                 //full ac
                 SET_BIT(PORTB,PB3);
             }
